@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/angularjs/libs/angular.min.js"></script>
+    <title>Angularjs</title>
+</head>
+<!-- Để khởi tạo 1 chương trình phải định nghĩa vùng sử dung -->
+<!-- ng-app: định nghĩa vùng sử dụng -->
+<body ng-app="demo">
+    <div ng-controller="demoController">
+        <h1>{{ xinchao }}</h1>
+    </div>
+
+    <div ng-controller="infoController">
+        <h1>{{ ten }}</h1>
+        <h1>{{ namsinh }}</h1>
+        <!-- <h1>{{ chuyennganh }}</h1> -->
+        <h1 ng-bind="chuyennganh"></h1>
+
+        <h1>Danh sách sinh viên</h1>
+        <table border="1">
+            <tr>
+                <td>Họ và tên</td>
+                <td>Năm</td>
+                <td>Chuyên ngành</td>
+            </tr>
+            <tr>
+                <td>{{ students[0].ten }}</td>
+                <td>{{ students[0].namsinh }}</td>
+                <td>{{ students[0].chuyennganh }}</td>
+            </tr>
+            <tr>
+                <td>{{ students[1].ten }}</td>
+                <td>{{ students[1].namsinh }}</td>
+                <td>{{ students[1].chuyennganh }}</td>
+            </tr>
+        </table>
+
+        <h1>Danh sách sinh viên 2</h1>
+        <table border="1">
+            <tr>
+                <td>Họ và tên</td>
+                <td>Năm sinh</td>
+                <td>Chuyên ngành</td>
+            </tr>
+            <tr ng-repeat="item in students">
+                <td>{{ item.ten}}</td>
+                <td>{{ item.namsinh}}</td>
+                <td>{{ item.chuyennganh}}</td>
+            </tr>
+        </table>
+    </div>
+    <!-- 
+        Khởi tạo 1 controller mới
+        khai báo và hiển thị tên, năm sinh và chuyennganh
+     -->
+    <!-- Nhúng link trực trực tiếp -->
+    <script></script>
+
+    <!-- Nhúng link gián tiếp -->
+    <script src="/angularjs/js/buoi4.js"></script>
+</body>
+</html>
