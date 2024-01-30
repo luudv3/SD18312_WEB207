@@ -18,7 +18,10 @@
                 <td>{{item.namsinh}}</td>
                 <td>{{item.chuyennganh}}</td>
                 <td> 
-                    <button class="btn btn-warning">Chi tiết</button>
+                    <a href="#!/detail-student/{{item.id}}">
+                        <button class="btn btn-warning">Chi tiết</button>
+                    </a>
+                    
                     <button ng-click="deleteStudent(item.id)" class="btn btn-danger">Xóa</button>
                 </td>
             </tr>

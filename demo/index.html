@@ -33,6 +33,8 @@
     </footer>
     <script src="./controller/ListStudentController.js"></script>
     <script src="./controller/AddStudentController.js"></script>
+    <script src="./controller/DetailStudentController.js"></script>
+    <script src="./controller/EditStudentController.js"></script>
     <script>
         let myApp = angular.module('appRoute', ['ngRoute']);
         myApp.config(function ($routeProvider){
@@ -49,6 +51,20 @@
                 {
                     templateUrl: 'views/addstudent.html',
                     controller: AddStudentController
+                }
+            )
+            .when(
+                '/detail-student/:id',
+                {
+                    templateUrl: 'views/detailstudent.html',
+                    controller: DetailStudentController
+                }
+            )
+            .when(
+                '/edit-student/:id',
+                {
+                    templateUrl: 'views/editstudent.html',
+                    controller: EditStudentController
                 }
             )
             // Khi mà yêu cầu route không hợp lệ nó sẽ tự nhảy về trang chủ

@@ -1,22 +1,16 @@
 {
   "student": [
     {
-      "ten": "Đặng Vũ Lưu",
-      "namsinh": 2005,
+      "ten": "Lưu Thị Hải Yến",
+      "namsinh": "2003",
       "chuyennganh": "CNTT",
       "id": "64fe"
     },
     {
-      "ten": "Đặng Vũ Lưu 2",
-      "namsinh": 1996,
-      "chuyennganh": "CNTT",
+      "ten": "Đặng Vũ Lưu 0",
+      "namsinh": "1997",
+      "chuyennganh": "CNTT1",
       "id": "339e"
-    },
-    {
-      "ten": "Lưu Thị Hải yến",
-      "namsinh": 2002,
-      "chuyennganh": "UDPM",
-      "id": "ef9a"
     }
   ]
 }
